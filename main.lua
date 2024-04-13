@@ -1,24 +1,14 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local NYXHub = Instance.new("ScreenGui")
-local LoadingSequence = Instance.new("Folder")
-local Main = Instance.new("Frame")
-local Loading = Instance.new("TextLabel")
-local Lemon = Instance.new("ImageLabel")
-local Decor = Instance.new("Folder")
-local Topbar = Instance.new("Frame")
-local Main_2 = Instance.new("Folder")
+-- real
+local NYXHubMobileFriendly = Instance.new("ScreenGui")
+local Main = Instance.new("Folder")
 local NotificationGroup = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
 local Notification = Instance.new("Frame")
 local Text = Instance.new("TextLabel")
+local Topbar = Instance.new("Frame")
+local Main_2 = Instance.new("Frame")
+local Decor = Instance.new("Folder")
 local Topbar_2 = Instance.new("Frame")
-local Main_3 = Instance.new("Frame")
-local Decor_2 = Instance.new("Folder")
-local Topbar_3 = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local TabsGroups = Instance.new("Folder")
 local Tab = Instance.new("ScrollingFrame")
@@ -70,62 +60,14 @@ local UIGradient_9 = Instance.new("UIGradient")
 
 --Properties:
 
-NYXHub.Name = "NYXHub"
-NYXHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-LoadingSequence.Name = "LoadingSequence"
-LoadingSequence.Parent = NYXHub
+NYXHubMobileFriendly.Name = "NYXHubMobileFriendly"
+NYXHubMobileFriendly.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Main.Name = "Main"
-Main.Parent = LoadingSequence
-Main.AnchorPoint = Vector2.new(0.5, 0.5)
-Main.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.499547482, 0, 0.498575538, 0)
-Main.Size = UDim2.new(0, 298, 0, 110)
-
-Loading.Name = "Loading"
-Loading.Parent = Main
-Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Loading.BackgroundTransparency = 1.000
-Loading.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Loading.BorderSizePixel = 0
-Loading.Position = UDim2.new(0.0147358943, 0, 0.283974111, 0)
-Loading.Size = UDim2.new(0, 198, 0, 46)
-Loading.Font = Enum.Font.RobotoMono
-Loading.Text = "Loading NYX  Hub"
-Loading.TextColor3 = Color3.fromRGB(203, 203, 203)
-Loading.TextSize = 14.000
-
-Lemon.Name = "Lemon"
-Lemon.Parent = Main
-Lemon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Lemon.BackgroundTransparency = 1.000
-Lemon.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Lemon.BorderSizePixel = 0
-Lemon.Position = UDim2.new(0.639188826, 0, 0.140909091, 0)
-Lemon.Size = UDim2.new(0, 80, 0, 80)
-Lemon.Image = "http://www.roblox.com/asset/?id=17133757987"
-Lemon.ScaleType = Enum.ScaleType.Slice
-
-Decor.Name = "Decor"
-Decor.Parent = Main
-
-Topbar.Name = "Topbar"
-Topbar.Parent = Decor
-Topbar.AnchorPoint = Vector2.new(0.5, 0.5)
-Topbar.BackgroundColor3 = Color3.fromRGB(19, 46, 73)
-Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Topbar.BorderSizePixel = 0
-Topbar.Position = UDim2.new(0.499547362, 0, -1.3871626e-07, 0)
-Topbar.Size = UDim2.new(1, 0, 0, 1)
-
-Main_2.Name = "Main"
-Main_2.Parent = NYXHub
+Main.Parent = NYXHubMobileFriendly
 
 NotificationGroup.Name = "NotificationGroup"
-NotificationGroup.Parent = Main_2
+NotificationGroup.Parent = Main
 NotificationGroup.Active = true
 NotificationGroup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NotificationGroup.BackgroundTransparency = 1.000
@@ -143,7 +85,7 @@ UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 UIListLayout.Padding = UDim.new(0, 10)
 
 Notification.Name = "Notification"
-Notification.Parent = game.StarterGui.NYXHub.Main.NotificationGroup.Ease
+Notification.Parent = game.StarterGui.NYXHubMobileFriendly.Main.NotificationGroup.Ease
 Notification.AnchorPoint = Vector2.new(0.5, 0.5)
 Notification.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -164,39 +106,39 @@ Text.Text = "This is a notification."
 Text.TextColor3 = Color3.fromRGB(203, 203, 203)
 Text.TextSize = 14.000
 
+Topbar.Name = "Topbar"
+Topbar.Parent = Notification
+Topbar.AnchorPoint = Vector2.new(0.5, 0.5)
+Topbar.BackgroundColor3 = Color3.fromRGB(255, 217, 0)
+Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Topbar.BorderSizePixel = 0
+Topbar.Position = UDim2.new(0.499547362, 0, -1.3871626e-07, 0)
+Topbar.Size = UDim2.new(1, 0, 0, 1)
+Topbar.ZIndex = 3
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Main_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Main_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.499996305, 0, 0.5, 0)
+Main_2.Size = UDim2.new(0, 541, 0, 330)
+
+Decor.Name = "Decor"
+Decor.Parent = Main_2
+
 Topbar_2.Name = "Topbar"
-Topbar_2.Parent = Notification
+Topbar_2.Parent = Decor
 Topbar_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Topbar_2.BackgroundColor3 = Color3.fromRGB(255, 217, 0)
+Topbar_2.BackgroundColor3 = Color3.fromRGB(19, 46, 73)
 Topbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Topbar_2.BorderSizePixel = 0
-Topbar_2.Position = UDim2.new(0.499547362, 0, -1.3871626e-07, 0)
-Topbar_2.Size = UDim2.new(1, 0, 0, 1)
-Topbar_2.ZIndex = 3
-
-Main_3.Name = "Main"
-Main_3.Parent = Main_2
-Main_3.AnchorPoint = Vector2.new(0.5, 0.5)
-Main_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Main_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main_3.BorderSizePixel = 0
-Main_3.Position = UDim2.new(0.499996305, 0, 0.5, 0)
-Main_3.Size = UDim2.new(0, 541, 0, 330)
-
-Decor_2.Name = "Decor"
-Decor_2.Parent = Main_3
-
-Topbar_3.Name = "Topbar"
-Topbar_3.Parent = Decor_2
-Topbar_3.AnchorPoint = Vector2.new(0.5, 0.5)
-Topbar_3.BackgroundColor3 = Color3.fromRGB(19, 46, 73)
-Topbar_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Topbar_3.BorderSizePixel = 0
-Topbar_3.Position = UDim2.new(0.499547422, 0, -0.000861196779, 0)
-Topbar_3.Size = UDim2.new(1, 0, 0, 2)
+Topbar_2.Position = UDim2.new(0.499547422, 0, -0.000861196779, 0)
+Topbar_2.Size = UDim2.new(1, 0, 0, 2)
 
 Title.Name = "Title"
-Title.Parent = Main_3
+Title.Parent = Main_2
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -210,7 +152,7 @@ Title.TextSize = 19.000
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
 TabsGroups.Name = "TabsGroups"
-TabsGroups.Parent = Main_3
+TabsGroups.Parent = Main_2
 
 Tab.Name = "Tab"
 Tab.Parent = TabsGroups
@@ -253,7 +195,7 @@ UIGradient.Rotation = 90
 UIGradient.Parent = TabsBG
 
 Tabs.Name = "Tabs"
-Tabs.Parent = Main_3
+Tabs.Parent = Main_2
 
 TabsBG_2.Name = "TabsBG"
 TabsBG_2.Parent = Tabs
@@ -661,117 +603,15 @@ UIGradient_9.Parent = Toggle_3
 
 -- Scripts:
 
-local function WNQIIVY_fake_script() -- LoadingSequence.LoadingScript 
-	local script = Instance.new('LocalScript', LoadingSequence)
-
-	local RequestedSize = UDim2.new(0, 298, 0, 110)
-	local TweenService = game:GetService("TweenService")
-	local Folder = script.Parent
-	local Main = Folder.Main
-	local ActualMain = script.Parent.Parent.Main.Main
-	ActualMain.Visible = false
-	Main.Size = UDim2.new(0, 0, 0, 0)
-	Main.Loading.TextTransparency = 1
-	Main.Lemon.ImageTransparency = 1
-	Main.Visible = true 
-	local function CreateNotification(text, duration)
-		local newtext = tostring(text)
-	 local Copy = ActualMain.Parent.NotificationGroup.Ease.Notification
-	 local Clone = Copy:Clone() 
-	 Clone.Parent = ActualMain.Parent.NotificationGroup 
-	 Clone.Text.Text = newtext
-	wait(duration)
-	Clone:Remove()
-	end
-	local function tweenSize(target, newSize, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		local tween = TweenService:Create(target, tweenInfo, { Size = newSize })
-		tween:Play()
-	end
-	
-	local function tweenImageTransparency(target, newTransparency, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		local tween = TweenService:Create(target, tweenInfo, { ImageTransparency = newTransparency })
-		tween:Play()
-	end
-	
-	local function tweenTextTransparency(target, newTransparency, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		local tween = TweenService:Create(target, tweenInfo, { TextTransparency = newTransparency })
-		tween:Play()
-	end
-	
-	local function tweenTransparency(target, newTransparency, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		local tween = TweenService:Create(target, tweenInfo, { Transparency = newTransparency })
-		tween:Play()
-	end
-	
-	local function animateMain(boolean)
-		tweenSize(Main, RequestedSize, 1)
-	
-		wait(0.5)
-	
-		-- Tween image transparency for Lemon
-		tweenImageTransparency(Main.Lemon, 0, 1)
-	
-		-- Function to handle text loading animation
-		local function loadingAnimation()
-			local loadingText = "Loading NYX Hub"
-			for i = 1, 3 do
-				-- Update loading text with varying number of dots
-				Main.Loading.Text = loadingText .. string.rep(".", i)
-				tweenTextTransparency(Main.Loading, 0, 0.5)  -- Fade in text
-				wait(1)
-				tweenTextTransparency(Main.Loading, 1, 0.5)  -- Fade out text
-				wait(0.5)
-			end
-			-- Reset to initial loading text with one dot
-			Main.Loading.Text = loadingText .. "."
-		end
-	
-		-- Start loading animation loop
-		loadingAnimation()
-	
-		-- Fade out Main, Lemon, and Loading
-		tweenTextTransparency(Main.Loading, 1, 0.5)  -- Fade out Loading text
-		tweenImageTransparency(Main.Lemon, 1, 0.1)   -- Fade out Lemon image
-		tweenSize(Main, UDim2.new(0, 0, 0, 0), 0.5)  -- Shrink Main to zero size (fade out effect)
-	
-		-- Set the boolean to true
-	    ActualMain.Visible = true
-		boolean = true
-	    
-		-- Return the boolean value
-		return boolean
-	end
-	
-	-- Start the animation and capture the boolean result
-	local booleanResult = animateMain(false)
-	
-	-- Function to perform an action when boolean becomes true
-	local function checkBoolean()
-		while not booleanResult do
-			wait(0.1)  -- Wait for a short interval before checking again
-		end
-		-- Perform your desired action here when booleanResult is true
-	   CreateNotification("NYX Hub has loaded!", 3)
-	    Folder:Destroy()
-	end
-	
-	-- Call the function to check the boolean state
-	checkBoolean()
-end
-coroutine.wrap(WNQIIVY_fake_script)()
-local function CXRTLSY_fake_script() -- NotificationGroup.Ease 
+local function BSFA_fake_script() -- NotificationGroup.Ease 
 	local script = Instance.new('LocalScript', NotificationGroup)
 
 	--[[
 	this script does nothing lmao
 	]]-- 
 end
-coroutine.wrap(CXRTLSY_fake_script)()
-local function JWGRLC_fake_script() -- Aimbot.Function 
+coroutine.wrap(BSFA_fake_script)()
+local function ZYTVH_fake_script() -- Aimbot.Function 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	local Button = script.Parent
@@ -791,8 +631,8 @@ local function JWGRLC_fake_script() -- Aimbot.Function
 	OurTab.Visible = true
 	end) 
 end
-coroutine.wrap(JWGRLC_fake_script)()
-local function XLWZ_fake_script() -- Aimbot_2.Function 
+coroutine.wrap(ZYTVH_fake_script)()
+local function TSOEIOR_fake_script() -- Aimbot_2.Function 
 	local script = Instance.new('LocalScript', Aimbot_2)
 
 	local localPlayer = game.Players.LocalPlayer
@@ -883,8 +723,8 @@ local function XLWZ_fake_script() -- Aimbot_2.Function
 	end)
 	
 end
-coroutine.wrap(XLWZ_fake_script)()
-local function KLLFF_fake_script() -- Toggle.Function 
+coroutine.wrap(TSOEIOR_fake_script)()
+local function OTYJIO_fake_script() -- Toggle.Function 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local Toggle = script.Parent
@@ -904,8 +744,8 @@ local function KLLFF_fake_script() -- Toggle.Function
 		end
 	end)
 end
-coroutine.wrap(KLLFF_fake_script)()
-local function NQRO_fake_script() -- Slider.SliderManager 
+coroutine.wrap(OTYJIO_fake_script)()
+local function XALPGV_fake_script() -- Slider.SliderManager 
 	local script = Instance.new('LocalScript', Slider)
 
 	local slider = script.Parent.Slider
@@ -960,8 +800,8 @@ local function NQRO_fake_script() -- Slider.SliderManager
 	end)
 	
 end
-coroutine.wrap(NQRO_fake_script)()
-local function XBQETEW_fake_script() -- Toggle_2.Function 
+coroutine.wrap(XALPGV_fake_script)()
+local function SLEC_fake_script() -- Toggle_2.Function 
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	local Toggle = script.Parent
@@ -981,8 +821,8 @@ local function XBQETEW_fake_script() -- Toggle_2.Function
 		end
 	end)
 end
-coroutine.wrap(XBQETEW_fake_script)()
-local function HQTVT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SLEC_fake_script)()
+local function ZLPAJEO_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -993,8 +833,8 @@ local function HQTVT_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(HQTVT_fake_script)()
-local function WGOCIFX_fake_script() -- RGB.Function 
+coroutine.wrap(ZLPAJEO_fake_script)()
+local function WEPNT_fake_script() -- RGB.Function 
 	local script = Instance.new('LocalScript', RGB)
 
 	local Button = script.Parent
@@ -1035,8 +875,8 @@ local function WGOCIFX_fake_script() -- RGB.Function
 	end)
 	
 end
-coroutine.wrap(WGOCIFX_fake_script)()
-local function GAHFUQV_fake_script() -- ColorMain.ColorMain 
+coroutine.wrap(WEPNT_fake_script)()
+local function ZFRANI_fake_script() -- ColorMain.ColorMain 
 	local script = Instance.new('LocalScript', ColorMain)
 
 	local player = game.Players.LocalPlayer
@@ -1111,8 +951,8 @@ local function GAHFUQV_fake_script() -- ColorMain.ColorMain
 	end)
 	
 end
-coroutine.wrap(GAHFUQV_fake_script)()
-local function NFLVJQ_fake_script() -- Toggle_3.Function 
+coroutine.wrap(ZFRANI_fake_script)()
+local function JNIWKP_fake_script() -- Toggle_3.Function 
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	local Toggle = script.Parent
@@ -1132,4 +972,4 @@ local function NFLVJQ_fake_script() -- Toggle_3.Function
 		end
 	end)
 end
-coroutine.wrap(NFLVJQ_fake_script)()
+coroutine.wrap(JNIWKP_fake_script)()
