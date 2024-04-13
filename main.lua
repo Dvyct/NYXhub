@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local LemonHubv2 = Instance.new("ScreenGui")
+local NYXHub = Instance.new("ScreenGui")
 local LoadingSequence = Instance.new("Folder")
 local Main = Instance.new("Frame")
 local Loading = Instance.new("TextLabel")
@@ -70,11 +70,11 @@ local UIGradient_9 = Instance.new("UIGradient")
 
 --Properties:
 
-LemonHubv2.Name = "LemonHubv2"
-LemonHubv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NYXHub.Name = "NYXHub"
+NYXHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 LoadingSequence.Name = "LoadingSequence"
-LoadingSequence.Parent = LemonHubv2
+LoadingSequence.Parent = NYXHub
 
 Main.Name = "Main"
 Main.Parent = LoadingSequence
@@ -122,7 +122,7 @@ Topbar.Position = UDim2.new(0.499547362, 0, -1.3871626e-07, 0)
 Topbar.Size = UDim2.new(1, 0, 0, 1)
 
 Main_2.Name = "Main"
-Main_2.Parent = LemonHubv2
+Main_2.Parent = NYXHub
 
 NotificationGroup.Name = "NotificationGroup"
 NotificationGroup.Parent = Main_2
@@ -143,7 +143,7 @@ UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 UIListLayout.Padding = UDim.new(0, 10)
 
 Notification.Name = "Notification"
-Notification.Parent = game.StarterGui["LemonHubv2"].Main.NotificationGroup.Ease
+Notification.Parent = game.StarterGui.NYXHub.Main.NotificationGroup.Ease
 Notification.AnchorPoint = Vector2.new(0.5, 0.5)
 Notification.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -458,7 +458,8 @@ Color.Parent = ComponentColorPicker
 Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Color.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Color.BorderSizePixel = 0
-Color.Size = UDim2.new(0, 349, 0, 28)
+Color.Position = UDim2.new(0.0153632658, 0, 0, 0)
+Color.Size = UDim2.new(0, 343, 0, 28)
 Color.ZIndex = 3
 
 TextButton.Parent = Color
@@ -527,11 +528,11 @@ ColorMain.Name = "ColorMain"
 ColorMain.Parent = ComponentColorPicker
 ColorMain.AnchorPoint = Vector2.new(0.5, 0.5)
 ColorMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ColorMain.Position = UDim2.new(1.31694007, 0, 1.25484622, 0)
-ColorMain.Size = UDim2.new(0, 200, 0, 210)
+ColorMain.Position = UDim2.new(1.29417157, 0, 1.03446913, 0)
+ColorMain.Size = UDim2.new(0, 200, 0, 203)
 ColorMain.SizeConstraint = Enum.SizeConstraint.RelativeXX
 ColorMain.Visible = false
-ColorMain.ZIndex = 5
+ColorMain.ZIndex = 4
 
 RGB_2.Name = "RGB"
 RGB_2.Parent = ColorMain
@@ -660,7 +661,7 @@ UIGradient_9.Parent = Toggle_3
 
 -- Scripts:
 
-local function SYAZUWQ_fake_script() -- LoadingSequence.LoadingScript 
+local function WNQIIVY_fake_script() -- LoadingSequence.LoadingScript 
 	local script = Instance.new('LocalScript', LoadingSequence)
 
 	local RequestedSize = UDim2.new(0, 298, 0, 110)
@@ -761,16 +762,16 @@ local function SYAZUWQ_fake_script() -- LoadingSequence.LoadingScript
 	-- Call the function to check the boolean state
 	checkBoolean()
 end
-coroutine.wrap(SYAZUWQ_fake_script)()
-local function NFYPTLP_fake_script() -- NotificationGroup.Ease 
+coroutine.wrap(WNQIIVY_fake_script)()
+local function CXRTLSY_fake_script() -- NotificationGroup.Ease 
 	local script = Instance.new('LocalScript', NotificationGroup)
 
 	--[[
 	this script does nothing lmao
 	]]-- 
 end
-coroutine.wrap(NFYPTLP_fake_script)()
-local function RFYQMD_fake_script() -- Aimbot.Function 
+coroutine.wrap(CXRTLSY_fake_script)()
+local function JWGRLC_fake_script() -- Aimbot.Function 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	local Button = script.Parent
@@ -790,8 +791,8 @@ local function RFYQMD_fake_script() -- Aimbot.Function
 	OurTab.Visible = true
 	end) 
 end
-coroutine.wrap(RFYQMD_fake_script)()
-local function HRYZQTS_fake_script() -- Aimbot_2.Function 
+coroutine.wrap(JWGRLC_fake_script)()
+local function XLWZ_fake_script() -- Aimbot_2.Function 
 	local script = Instance.new('LocalScript', Aimbot_2)
 
 	local localPlayer = game.Players.LocalPlayer
@@ -882,8 +883,8 @@ local function HRYZQTS_fake_script() -- Aimbot_2.Function
 	end)
 	
 end
-coroutine.wrap(HRYZQTS_fake_script)()
-local function WGAEMEJ_fake_script() -- Toggle.Function 
+coroutine.wrap(XLWZ_fake_script)()
+local function KLLFF_fake_script() -- Toggle.Function 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local Toggle = script.Parent
@@ -903,8 +904,8 @@ local function WGAEMEJ_fake_script() -- Toggle.Function
 		end
 	end)
 end
-coroutine.wrap(WGAEMEJ_fake_script)()
-local function ZVENAF_fake_script() -- Slider.SliderManager 
+coroutine.wrap(KLLFF_fake_script)()
+local function NQRO_fake_script() -- Slider.SliderManager 
 	local script = Instance.new('LocalScript', Slider)
 
 	local slider = script.Parent.Slider
@@ -959,8 +960,8 @@ local function ZVENAF_fake_script() -- Slider.SliderManager
 	end)
 	
 end
-coroutine.wrap(ZVENAF_fake_script)()
-local function OFILPEV_fake_script() -- Toggle_2.Function 
+coroutine.wrap(NQRO_fake_script)()
+local function XBQETEW_fake_script() -- Toggle_2.Function 
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	local Toggle = script.Parent
@@ -980,8 +981,8 @@ local function OFILPEV_fake_script() -- Toggle_2.Function
 		end
 	end)
 end
-coroutine.wrap(OFILPEV_fake_script)()
-local function BHDEQIZ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(XBQETEW_fake_script)()
+local function HQTVT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -992,8 +993,8 @@ local function BHDEQIZ_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BHDEQIZ_fake_script)()
-local function HYWCPTZ_fake_script() -- RGB.Function 
+coroutine.wrap(HQTVT_fake_script)()
+local function WGOCIFX_fake_script() -- RGB.Function 
 	local script = Instance.new('LocalScript', RGB)
 
 	local Button = script.Parent
@@ -1034,8 +1035,8 @@ local function HYWCPTZ_fake_script() -- RGB.Function
 	end)
 	
 end
-coroutine.wrap(HYWCPTZ_fake_script)()
-local function KAVIV_fake_script() -- ColorMain.ColorMain 
+coroutine.wrap(WGOCIFX_fake_script)()
+local function GAHFUQV_fake_script() -- ColorMain.ColorMain 
 	local script = Instance.new('LocalScript', ColorMain)
 
 	local player = game.Players.LocalPlayer
@@ -1110,8 +1111,8 @@ local function KAVIV_fake_script() -- ColorMain.ColorMain
 	end)
 	
 end
-coroutine.wrap(KAVIV_fake_script)()
-local function SZKSEVU_fake_script() -- Toggle_3.Function 
+coroutine.wrap(GAHFUQV_fake_script)()
+local function NFLVJQ_fake_script() -- Toggle_3.Function 
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	local Toggle = script.Parent
@@ -1131,4 +1132,4 @@ local function SZKSEVU_fake_script() -- Toggle_3.Function
 		end
 	end)
 end
-coroutine.wrap(SZKSEVU_fake_script)()
+coroutine.wrap(NFLVJQ_fake_script)()
